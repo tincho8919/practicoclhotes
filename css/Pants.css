@@ -1,0 +1,244 @@
+
+/* Reset de estilos y estilos básicos */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: grey;
+}
+img{
+    width: 300px;
+    height: 500px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+button:hover {
+    color: #1d0feb;
+}
+/* Estilos para el alerta */
+.alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    visibility: hidden;
+}
+
+.alert-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el navbar */
+nav {
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo01{
+    color: green;
+}
+.logotext{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: greenyellow;
+    text-decoration: none;
+    font-size: 1.8rem;
+
+}
+.logo img {
+    width: 100px; /* Ajusta el tamaño de tu logo según tus necesidades */
+    height: auto;
+}
+
+.menu-toggle button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #FF5733;
+}
+
+/* Estilos para el menú desplegable (oculto por defecto) */
+.menu-toggle {
+    display: none;
+}
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociales img {
+    width: 30px; /* Ajusta el tamaño de los iconos según tus necesidades */
+    height: 30px;
+}
+
+.redes-sociales a:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último icono */
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+}
+.twitter{
+    color: yellow;
+}
+.instagram{
+    color: violet;
+}
+.linkedin{
+    color: lightblue;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+}
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        top: 60px; /* Ajusta la posición del menú según tus necesidades */
+        right: 0;
+        left: 0;
+        z-index: 1;
+        gap: 2rem;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+} 
+@media (min-width: 320px ) {
+    img{
+        width: 50px;
+        height: 100px;
+    }
+    th, td {
+        padding: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+    @media (min-width: 768px ) {
+    
+        img{
+            width: 200px;
+            height: 300px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    @media (min-width: 990px ) {
+        img{
+            width: 500px;
+            height: 700px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            font-size: 2rem;
+        }
+        }

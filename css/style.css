@@ -1,0 +1,249 @@
+/* Reset de estilos y estilos básicos */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+H1{
+    color: antiquewhite;
+    text-align: center;
+}
+/* Estilos para el navbar */
+nav {
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo01{
+    color: green;
+}
+.logotext{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: greenyellow;
+    text-decoration: none;
+    font-size: 1.8rem;
+
+}
+.logo img {
+    width: 100px; /* Ajusta el tamaño de tu logo según tus necesidades */
+    height: auto;
+}
+
+.menu-toggle button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #FF5733;
+}
+
+/* Estilos para el menú desplegable (oculto por defecto) */
+.menu-toggle {
+    display: none;
+}
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociales img {
+    width: 30px; /* Ajusta el tamaño de los iconos según tus necesidades */
+    height: 30px;
+}
+
+.redes-sociales a:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último icono */
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+}
+.twitter{
+    color: yellow;
+}
+.instagram{
+    color: violet;
+}
+.linkedin{
+    color: lightblue;
+}
+/* Estilos para el carrusel */
+.slider-container {
+    position: relative;
+    max-width: 500px; /* Ajusta el ancho del carrusel según tus necesidades */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: 400px;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+/* Reset de estilos y estilos básicos */
+
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+.img {
+    max-width: 100px;
+    height: 100px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        top: 60px; /* Ajusta la posición del menú según tus necesidades */
+        right: 0;
+        left: 0;
+        z-index: 1;
+        gap: 2rem;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+} 
+@media (min-width: 320px ) {
+    img{
+        width: 100%;
+    }
+}
+
+    @media (min-width: 768px ) {
+    
+        img{
+            width: 100%;
+        }
+    
+    }
+    @media (min-width: 990px ) {
+        
+        
+        }
